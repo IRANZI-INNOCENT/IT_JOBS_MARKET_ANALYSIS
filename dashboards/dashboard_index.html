@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Job Market Dashboard Suite</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .dashboard-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e1e8ed;
+        }
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        .card-header {
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-bottom: 1px solid #dee2e6;
+        }
+        .card-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .card-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 0;
+        }
+        .card-description {
+            color: #6c757d;
+            margin: 5px 0 0 0;
+            font-size: 0.9em;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .dashboard-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .dashboard-link:hover {
+            background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+            transform: translateY(-2px);
+        }
+        .stats {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #dee2e6;
+        }
+        .stat-item {
+            display: inline-block;
+            margin: 0 30px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+            .stat-item {
+                display: block;
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 IT Job Market Dashboard Suite</h1>
+            <p>Interactive Analysis of 50,000+ IT Job Opportunities</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">50,000+</div>
+                <div class="stat-label">IT Jobs Analyzed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">7</div>
+                <div class="stat-label">Interactive Dashboards</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Key Skills Tracked</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2025-2030</div>
+                <div class="stat-label">Prediction Timeline</div>
+            </div>
+        </div>
+        
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">Overview Dashboard</h3>
+                    <p class="card-description">Key metrics, total opportunities, and market summary</p>
+                </div>
+                <div class="card-body">
+                    <a href="overview_dashboard.html" class="dashboard-link">View Overview</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title">Domain Analysis</h3>
+                    <p class="card-description">IT field distribution, market share, and domain trends</p>
+                </div>
+                <div class="card-body">
+                    <a href="domain_analysis_dashboard.html" class="dashboard-link">Explore Domains</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">🚀</div>
+                    <h3 class="card-title">Skills Demand</h3>
+                    <p class="card-description">In-demand skills, future trends, and growth analysis</p>
+                </div>
+                <div class="card-body">
+                    <a href="skills_demand_dashboard.html" class="dashboard-link">View Skills</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">💼</div>
+                    <h3 class="card-title">Career Opportunities</h3>
+                    <p class="card-description">Experience levels, work types, and career paths</p>
+                </div>
+                <div class="card-body">
+                    <a href="career_opportunities_dashboard.html" class="dashboard-link">Explore Careers</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">🏢</div>
+                    <h3 class="card-title">Company Analysis</h3>
+                    <p class="card-description">Top hiring companies, industry focus, and trends</p>
+                </div>
+                <div class="card-body">
+                    <a href="company_analysis_dashboard.html" class="dashboard-link">View Companies</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">🔮</div>
+                    <h3 class="card-title">Future Predictions</h3>
+                    <p class="card-description">Growth forecasts for 2025-2030 and investment priorities</p>
+                </div>
+                <div class="card-body">
+                    <a href="predictions_dashboard.html" class="dashboard-link">See Predictions</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">📈</div>
+                    <h3 class="card-title">Complete Summary</h3>
+                    <p class="card-description">Comprehensive overview with all insights and action items</p>
+                </div>
+                <div class="card-body">
+                    <a href="comprehensive_summary_dashboard.html" class="dashboard-link">View Summary</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🎨 Generated by IT Job Market Analysis Dashboard Suite | Interactive Plotly Visualizations</p>
+        </div>
+    </div>
+</body>
+</html>
+        
