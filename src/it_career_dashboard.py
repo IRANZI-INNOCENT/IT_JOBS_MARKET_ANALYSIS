@@ -46,6 +46,7 @@ class ITCareerDashboard:
         work_dist = self.df['work_type'].value_counts()
         
         print(f"""
+              
 🔍 KEY FINDINGS:
 
 1. MARKET DOMINANCE:
